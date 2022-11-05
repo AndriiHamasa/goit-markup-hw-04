@@ -9,6 +9,12 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+#Exclude icons folder
+icons
+
+#Exclude folder with unoptimized sprite
+symbol-defs.svg
+
 # Runtime data
 pids
 *.pid
