@@ -108,7 +108,7 @@ ul {
 .nav-item:hover,
 .nav-item:focus,
 .contact-item:hover,
-.contact-item:focus {
+.contact-item:focus{
   color: var(--accent-color);
 }
 
@@ -126,12 +126,20 @@ ul {
 
 .contact-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
   color: var(--primary-text-color);
 }
 
-.envelope-icon {
-  color: currentColor;
+.contact-icon {
+  fill: currentColor;
+}
+
+.contact-item:hover .contact-icon,
+.contact-item:focus .contact-icon{
+  fill: var(--accent-color);
 }
 
 /*--------MAIN--------*/
@@ -204,8 +212,6 @@ ul {
 .strong-container {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.strong-container {
   display: flex;
 
   justify-content: space-between;
@@ -217,6 +223,31 @@ ul {
 .strong-list:last-child {
   /*margin-right: 0;*/
 }
+
+.strong-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--item-color);
+
+}
+
+.strong-icon{
+  fill: var(--primary-title-color);
+}
+
+.strong-icon #accent-icon{
+  fill: var(--accent-color);
+}
+
+
+
 .strong-part-title {
   margin-bottom: 10px;
 
@@ -257,6 +288,7 @@ ul {
 .team-list,
 .adres-list,
 .btn-list,
+.strong-container,
 .project-list,
 .list,
 .strong-lis,
@@ -327,7 +359,7 @@ ul {
   height: 44px;
   border-radius: 50%;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .socials-link:hover,
@@ -466,7 +498,7 @@ ul {
   height: 44px;
   border-radius: 50%;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .socials-icon-ftr {
